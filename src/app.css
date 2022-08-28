@@ -16,14 +16,14 @@ html {
 
 /* Global variables and variable font setup */
 :root {
-	/* Weight varies 100-900 default 400 step 1 */
-	--font-heading: 'Space GroteskVariable', sans-serif;
-	--font-heading-fallback: 'Space Grotesk', sans-serif;
-	/* Weight varies 300-700 default 400 step 1 */
+    /* Weight varies 100-900 default 400 step 1 */
+    --font-heading: 'Space GroteskVariable', sans-serif;
+    --font-heading-fallback: 'Space Grotesk', sans-serif;
+    /* Weight varies 300-700 default 400 step 1 */
     --font-paragraph: 'InterVariable', sans-serif;
     --font-paragraph-fallback: 'Inter', sans-serif;
 
-	--logo-color: #0F682D;
+    --logo-color: #0F682D;
     --primary-color: #0F682D;
     --text-color: #312F36;
     --pure-white: #FFFFFF;
@@ -33,21 +33,23 @@ html {
     font-family: var(--font-paragraph-fallback);
     color: var(--text-color);
     font-size: 16px;
-	font-weight: 400;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading-fallback);
     font-weight: 400;
     color: var(--text-color);
+    line-height: 125%;
+    margin: 0;
 }
 
 @supports (font-variation-settings: normal) {
-	html {
-		font-family: var(--font-paragraph);
-	}
+    html {
+        font-family: var(--font-paragraph);
+    }
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: var(--font-heading);
-	}
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+    }
 }
