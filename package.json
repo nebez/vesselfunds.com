@@ -30,7 +30,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0",
-		"cookie": "^0.4.1"
+		"@fontsource/inter": "^4.5.12",
+		"@fontsource/space-grotesk": "^4.5.10",
+		"cookie": "^0.4.1",
+		"normalize.css": "^8.0.1"
 	}
 }
