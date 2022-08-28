@@ -1,44 +1,52 @@
 <script lang="ts">
-	import ButtonLink from './ButtonLink.svelte';
+	import Header from '$lib/header/Header.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Vessel</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<ButtonLink text="Sign in" style="secondary" href="#123" />
-	<ButtonLink text="Request early access" style="primary" href="#456" />
-
+<section class="section-masked">
+	<div class="section-background" />
+	<div class="section-background-slant" />
+	<div class="section-container">
+		<div class="section-content section-content-header">
+			<Header />
+		</div>
+	</div>
 </section>
 
 <style>
-	/* section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	} */
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
+	.section-masked {
 		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		--alternate-background-color: #F1F5F0;
 	}
-
-	.welcome img {
+	.section-background, .section-background-slant {
 		position: absolute;
+		background-color: var(--alternate-background-color);
+		left: 0;
+		top: 0;
 		width: 100%;
 		height: 100%;
-		top: 0;
-		display: block;
+	}
+	.section-background-slant {
+		transform-origin: 100% 0;
+		transform: skewY(-3.5deg);
+	}
+	.section-container {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+	}
+	.section-content {
+		width: 100%;
+		max-width: 1206px;
+		margin: 0 25px;
+	}
+
+	.section-content-header {
+		padding: 45px 0;
 	}
 </style>

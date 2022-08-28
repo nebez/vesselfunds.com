@@ -14,6 +14,7 @@
 		font-size: 15px;
 		font-weight: 500;
 		text-decoration: none;
+		border: 1px solid var(--primary-color);
 	}
 
 	a.primary {
@@ -27,7 +28,6 @@
 
 	a.secondary {
 		color: var(--primary-color);
-		border: 1px solid var(--primary-color);
 	}
 
 	a.secondary:hover {
