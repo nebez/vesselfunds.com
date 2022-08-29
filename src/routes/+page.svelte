@@ -110,25 +110,25 @@
         position: relative;
     }
 
-.mark-bottom-left {
-    width: 20vw;
-    height: 42px;
-    position: absolute;
-    bottom: -21px;
-    left: 0;
-    background-color: var(--primary-color);
-    opacity: 0.65;
-}
+    .mark-bottom-left {
+        width: 20vw;
+        height: 42px;
+        position: absolute;
+        bottom: -21px;
+        left: 0;
+        background-color: var(--primary-color);
+        opacity: 0.65;
+    }
 
-.mark-top-right {
-    width: 20vw;
-    height: 42px;
-    position: absolute;
-    top: -21px;
-    right: 0;
-    background-color: var(--primary-color);
-    opacity: 0.65;
-}
+    .mark-top-right {
+        width: 20vw;
+        height: 42px;
+        position: absolute;
+        top: -21px;
+        right: 0;
+        background-color: var(--primary-color);
+        opacity: 0.65;
+    }
 
     .section-container {
         position: relative;
