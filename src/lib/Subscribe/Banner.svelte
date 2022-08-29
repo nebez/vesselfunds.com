@@ -136,17 +136,4 @@
     .email-input input:focus {
         outline: none;
     }
-
-    .email-submit button {
-        display: block;
-        padding: 13px 30px;
-        background: #4ec977;
-        border: 1px solid #4ec977;
-        border-radius: 4px;
-
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        color: #ffffff;
-    }
 </style>
