@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let style: 'primary' | 'transparent' | 'light-primary';
+    export let style: 'primary' | 'transparent' | 'subscribe' | 'contact';
     export let href: string | undefined = undefined;
     export let arrow: boolean = false;
     export let type: string = 'button';
@@ -39,6 +39,7 @@
         font-weight: 500;
         text-decoration: none;
         border: 1px solid var(--primary-color);
+        background: none;
     }
 
     .button.primary {
@@ -50,6 +51,16 @@
         opacity: 0.92;
     }
 
+    .button.contact {
+        color: var(--primary-color);
+        background-color: #bfdccd;
+        border-color: #bfdccd;
+    }
+
+    .button.contact:hover {
+        opacity: 0.92;
+    }
+
     .button.transparent {
         color: var(--primary-color);
     }
@@ -58,12 +69,13 @@
         background-color: rgba(128, 128, 128, 0.1);
     }
 
-    .button.light-primary {
+    .button.subscribe {
         color: var(--pure-white);
         background-color: #4ec977;
+        border-color: #4ec977;
     }
 
-    .button.light-primary:hover {
+    .button.subscribe:hover {
         opacity: 0.85;
     }
 

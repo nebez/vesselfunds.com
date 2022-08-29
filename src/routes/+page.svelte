@@ -1,6 +1,7 @@
 <script lang="ts">
-    import Header from '$lib/header/Header.svelte';
-    import SubscribeBanner from '$lib/subscribe/Banner.svelte';
+    import Header from '$lib/Header/Header.svelte';
+    import Footer from '$lib/Footer/Footer.svelte';
+    import SubscribeBanner from '$lib/Subscribe/Banner.svelte';
 </script>
 
 <svelte:head>
@@ -88,7 +89,14 @@
     <SubscribeBanner />
 </section>
 
+<footer>
+    <Footer />
+</footer>
+
 <style>
+    footer {
+        margin-top: 120px;
+    }
     .subscribe {
         position: relative;
         z-index: 1;

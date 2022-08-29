@@ -23,7 +23,7 @@
             />
         </div>
         <div class="email-submit">
-            <ButtonLink type="submit" style="light-primary" arrow>Sign up</ButtonLink>
+            <ButtonLink type="submit" style="subscribe" arrow>Sign up</ButtonLink>
         </div>
     </form>
 </div>
