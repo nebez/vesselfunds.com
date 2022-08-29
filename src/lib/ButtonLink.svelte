@@ -12,7 +12,7 @@
     };
 </script>
 
-<svelte:element this={elementType} {...buttonProps}
+<svelte:element this={elementType} {...buttonProps} on:click
     ><slot />
     <svg
         class="hover-arrow"

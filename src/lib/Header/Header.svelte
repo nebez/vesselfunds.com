@@ -1,7 +1,18 @@
-<script>
+<script lang="ts">
     import Logo from '$lib/Logo/Logo.svelte';
     import Wordmark from '$lib/Logo/Wordmark.svelte';
     import ButtonLink from '$lib/ButtonLink.svelte';
+
+    const scrollIntoView = (e: Event) => {
+        if (!(e.target instanceof HTMLElement)) return;
+
+        const el = document.querySelector(e.target.getAttribute('href') ?? 'dont-find-anything');
+
+        if (!el) return;
+        e.preventDefault();
+
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
 </script>
 
 <header>
@@ -12,7 +23,7 @@
 
     <nav>
         <ButtonLink style="transparent">Sign in</ButtonLink>
-        <ButtonLink style="primary" href="#subscribe">Request early access</ButtonLink>
+        <ButtonLink style="primary" href="#subscribe" on:click={scrollIntoView}>Request early access</ButtonLink>
     </nav>
 </header>
 
