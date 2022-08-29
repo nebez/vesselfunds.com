@@ -12,12 +12,12 @@
         first to receive product updates by email and notifications of future closed beta openings.
     </p>
 
-    <form method="POST" class="subscription-form">
+    <form method="POST" class="subscription-form" action="https://vesselfunds.us14.list-manage.com/subscribe/post?u=9ab940ea9e40956ea045d7208&amp;id=7857c803b3&amp;f_id=00cbf3e0f0">
         <div class="email-input">
             <label for="subscriber-email" class={emailInput.length > 0 ? 'above' : ''}>Email</label>
             <input
                 type="email"
-                name="subscriber-email"
+                name="EMAIL"
                 id="subscriber-email"
                 bind:value={emailInput}
             />
