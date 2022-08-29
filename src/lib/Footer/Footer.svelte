@@ -32,8 +32,15 @@ import ButtonLink from "$lib/ButtonLink.svelte";
         background: #FFFFFF;
         border-radius: 8px;
         padding: 48px;
+        margin: 0 25px;
         gap: 50px;
         box-shadow: 0px 0px 22px -3px rgba(10, 33, 18, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .message {
+            flex-direction: column;
+        }
     }
 
     .message .left {

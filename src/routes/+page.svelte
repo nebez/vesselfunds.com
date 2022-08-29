@@ -94,18 +94,6 @@
 </footer>
 
 <style>
-    footer {
-        margin-top: 120px;
-    }
-    .subscribe {
-        position: relative;
-        z-index: 1;
-        max-width: 830px;
-        width: 100%;
-        margin: 0 auto;
-        top: -35px;
-    }
-
     .section-masked {
         position: relative;
         --alternate-background-color: #f1f5f0;
@@ -185,6 +173,22 @@
         gap: 85px;
     }
 
+    @media (max-width: 800px) {
+        .split {
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .section-content-works {
+            padding-top: 70px;
+        }
+
+        .section-content-works .split {
+            flex-direction: column-reverse;
+        }
+    }
+
     .intro-img {
         position: relative;
         width: 100%;
@@ -201,9 +205,27 @@
         position: absolute;
     }
 
+    @media (max-width: 800px) {
+        .section-content-header .intro-img img {
+            position: relative;
+            margin: 0 auto -100px;
+        }
+        .intro-img img {
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+    }
+
     .intro-text {
         width: 100%;
         max-width: 490px;
+    }
+
+    @media (max-width: 800px) {
+        .intro-text {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 
     .intro-text h1 {
@@ -218,5 +240,18 @@
         color: #46434d;
         margin: 0;
         margin-top: 23px;
+    }
+
+    .subscribe {
+        position: relative;
+        z-index: 1;
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
+        top: -35px;
+    }
+
+    footer {
+        margin-top: 120px;
     }
 </style>

@@ -23,6 +23,12 @@
         align-items: center;
     }
 
+    @media (max-width: 425px) {
+        header {
+            justify-content: center;
+        }
+    }
+
     .logo {
         display: flex;
         flex-direction: row;
@@ -43,5 +49,11 @@
         display: flex;
         flex-direction: row;
         gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            display: none;
+        }
     }
 </style>

@@ -34,12 +34,34 @@
         flex-direction: column;
         align-items: center;
         padding: 30px 170px;
+        margin: 0 25px;
         gap: 30px;
         border-radius: 8px;
         background-color: var(--primary-color);
     }
 
+@media (max-width: 1024px) {
+    .banner {
+        padding: 30px 130px;
+    }
+}
+
+
+@media (max-width: 768px) {
+        .banner {
+            padding: 30px 70px;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+        .banner {
+            padding: 30px 30px;
+        }
+    }
+
     h2 {
+        text-align: center;
         font-size: 40px;
         font-weight: 500;
         color: var(--pure-white);
@@ -64,6 +86,12 @@
 
         border: 1px solid #19813c;
         border-radius: 5px;
+    }
+
+    @media (max-width: 660px) {
+        .subscription-form {
+            flex-direction: column;
+        }
     }
 
     .email-input {
