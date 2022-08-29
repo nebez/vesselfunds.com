@@ -6,7 +6,7 @@
 
 <svelte:head>
     <title>Vessel</title>
-    <meta name="description" content="Svelte demo app" />
+    <meta name="description" content="Investing in Private Equity and Venture Capital -- for everyone." />
 </svelte:head>
 
 <section class="section-masked">
