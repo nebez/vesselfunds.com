@@ -1,5 +1,6 @@
 <script lang="ts">
     import Header from '$lib/header/Header.svelte';
+    import SubscribeBanner from '$lib/subscribe/Banner.svelte';
 </script>
 
 <svelte:head>
@@ -83,7 +84,20 @@
     </div>
 </section>
 
+<section class="subscribe" id="subscribe">
+    <SubscribeBanner />
+</section>
+
 <style>
+    .subscribe {
+        position: relative;
+        z-index: 1;
+        max-width: 830px;
+        width: 100%;
+        margin: 0 auto;
+        top: -35px;
+    }
+
     .section-masked {
         position: relative;
         --alternate-background-color: #f1f5f0;

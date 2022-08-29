@@ -12,7 +12,7 @@
 
     <nav>
         <ButtonLink text="Sign in" style="secondary" href="#123" />
-        <ButtonLink text="Request early access" style="primary" href="#456" />
+        <ButtonLink text="Request early access" style="primary" href="#subscribe" />
     </nav>
 </header>
 
