@@ -11,7 +11,7 @@
     </div>
 
     <nav>
-        <ButtonLink style="secondary">Sign in</ButtonLink>
+        <ButtonLink style="transparent">Sign in</ButtonLink>
         <ButtonLink style="primary" href="#subscribe">Request early access</ButtonLink>
     </nav>
 </header>

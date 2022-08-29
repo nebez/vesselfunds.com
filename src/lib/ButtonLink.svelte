@@ -1,18 +1,32 @@
 <script lang="ts">
-    export let style: 'primary' | 'secondary';
+    export let style: 'primary' | 'transparent' | 'light-primary';
     export let href: string | undefined = undefined;
     export let arrow: boolean = false;
+    export let type: string = 'button';
 
     $: elementType = href && href.length > 0 ? 'a' : 'button';
-    $: classList = [style, 'button'].join(' ');
+    $: buttonProps = {
+        type: elementType === 'button' ? type : undefined,
+        href: elementType === 'a' ? href : undefined,
+        class: [style, 'button'].join(' ')
+    };
 </script>
 
-<svelte:element this={elementType} class={classList} {href}><slot /> <svg class="hover-arrow" class:visible={arrow} width="11" height="11" viewBox="0 0 10 10" aria-hidden="true">
-    <g fill-rule="evenodd">
-        <path class="hover-arrow-line-path" d="M0 5h7"></path>
-        <path class="hover-arrow-tip-path" d="M1 1l4 4-4 4"></path>
-    </g>
-  </svg>
+<svelte:element this={elementType} {...buttonProps}
+    ><slot />
+    <svg
+        class="hover-arrow"
+        class:visible={arrow}
+        width="11"
+        height="11"
+        viewBox="0 0 10 10"
+        aria-hidden="true"
+    >
+        <g fill-rule="evenodd">
+            <path class="hover-arrow-line-path" d="M0 5h7" />
+            <path class="hover-arrow-tip-path" d="M1 1l4 4-4 4" />
+        </g>
+    </svg>
 </svelte:element>
 
 <style>
@@ -36,18 +50,27 @@
         opacity: 0.92;
     }
 
-    .button.secondary {
+    .button.transparent {
         color: var(--primary-color);
     }
 
-    .button.secondary:hover {
+    .button.transparent:hover {
         background-color: rgba(128, 128, 128, 0.1);
+    }
+
+    .button.light-primary {
+        color: var(--pure-white);
+        background-color: #4ec977;
+    }
+
+    .button.light-primary:hover {
+        opacity: 0.85;
     }
 
     .hover-arrow {
         display: none;
         --arrow-spacing: 5px;
-        --arrow-hover-transition: 150ms cubic-bezier(0.215,0.61,0.355,1);
+        --arrow-hover-transition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
         --arrow-hover-offset: translateX(3px);
         --arrow-tip-transform: none;
         --arrow-line-opacity: 0;
@@ -65,12 +88,12 @@
 
     .hover-arrow-line-path {
         opacity: var(--arrow-line-opacity);
-        transition: opacity var(--hoverTransition,var(--arrow-hover-transition));
+        transition: opacity var(--hoverTransition, var(--arrow-hover-transition));
     }
 
     .hover-arrow-tip-path {
         transform: var(--arrow-tip-transform);
-        transition: transform var(--hoverTransition,var(--arrow-hover-transition));
+        transition: transform var(--hoverTransition, var(--arrow-hover-transition));
     }
 
     .button:hover .hover-arrow-line-path {
