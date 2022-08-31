@@ -20,10 +20,10 @@
 
             <section class="split">
                 <div class="intro-text">
-                    <h1>Access private markets</h1>
-                    <p>
+                    <h1>Join an exclusive community and get access to top-performing venture capital and private equity funds</h1>
+                    <!-- <p>
                         As an individual investor, top tier funds are difficult to access and have prohibitively high minimums. Join an exclusive community and get access to a curated selection of top-performing Private Equity, Venture Capital, and Growth Equity funds.
-                    </p>
+                    </p> -->
                 </div>
 
                 <div class="intro-img">
