@@ -20,12 +20,9 @@
 
             <section class="split">
                 <div class="intro-text">
-                    <h1>Access exclusive funds</h1>
+                    <h1>Access private markets</h1>
                     <p>
-                        As an individual investor, top tier private equity funds are difficult to
-                        access. Our team of investment professionals does the research and makes
-                        large commitments to these funds making it possible for smaller commitments
-                        to lorem ipsum lorem ipsum lorem ipsum.
+                        As an individual investor, top tier funds are difficult to access and have prohibitively high minimums. Join an exclusive community and get access to a curated selection of top-performing Private Equity, Venture Capital, and Growth Equity funds.
                     </p>
                 </div>
 
@@ -48,10 +45,7 @@
                 <div class="intro-text">
                     <h1>How it works</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        When Vessel lists an opportunity to invest in a private market fund on its platform, Vessel creates an investment vehicle called a <em>feeder fund</em>. We pool capital from several investors and invest in the <em>underlying fund</em>, allowing you to invest as little as $50k in any fund listed on the platform. All capital calls, distributions, and fees go through the Vessel feeder fund. Vessel works with partners (e.g., tax accountants, auditors, etc.) to provide investors with an efficient and streamlined investment experience.
                     </p>
                 </div>
             </section>

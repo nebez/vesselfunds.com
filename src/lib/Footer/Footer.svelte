@@ -9,7 +9,7 @@ import ButtonLink from "$lib/ButtonLink.svelte";
             <p>We want exceptional talent. Shoot us an email, attach your resume, and tell us how you think you could help us bring private market investments into the digital world.</p>
         </div>
         <div class="right">
-            <ButtonLink href="mailto:thomas@vesselfunds.com?subject=Working at Vessel" style="contact" arrow>Get in touch</ButtonLink>
+            <ButtonLink href="mailto:careers@vesselfunds.com?subject=Working at Vessel" style="contact" arrow>Get in touch</ButtonLink>
         </div>
     </div>
 </div>
